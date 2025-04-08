@@ -1,5 +1,5 @@
 """ This barebones program is meant to run in a dedicated container
-    running a Flask server on the 4100 port and connecting
+    running a Flask server on the 5000 port and connecting
     to a separate container named mongo-conainer running a mongodb instance on port 27017
     
     The python project is managed by poetry with its pyproject.toml file.
@@ -16,11 +16,11 @@
     To test you can use curl (or any other REST interface) 
     from the same host running the container as follows:
     
-    curl "http://localhost:12345/store?data=Ciao-Luffy"
+    curl "http://localhost:5000/store?data=Ciao-Luffy"
     
     or
     
-    curl "http://localhost:12345/listall"
+    curl "http://localhost:5000/listall"
     
     Data will persist under the ./data directory on the host filesystem under the project root
 """

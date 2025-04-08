@@ -22,7 +22,7 @@ services:
     container_name: mongo-container
     restart: unless-stopped
     volumes:
-      - /mylogs:/data/db  # Persist data from the container (/data/db) to the host machine (./data)
+      - /home/ubuntu/mylogs:/data/db  # Persist data from the container (/data/db) to the host machine (./data)
     healthcheck: # since flask-app depends on it we want to know this is alive and well
       test: echo 'db.runCommand("ping").ok' | mongosh --quiet
       interval: 10s

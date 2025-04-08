@@ -11,7 +11,7 @@ def generate_fake_names(n=500):
     return names
 
 def send_requests(names):
-    url = "http://localhost:12345/store"
+    url = "http://localhost:5000/store"
     for name in names:
         params = {'data': name}
         response = requests.get(url, params=params)

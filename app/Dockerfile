@@ -22,5 +22,5 @@ COPY . /app/
 RUN poetry install --no-dev
 
 # Use poetry to run app/app.py behind gunicorn
-CMD ["poetry", "run", "gunicorn", "app.app:app", "-b", "0.0.0.0:4100", "--workers=4"]
+CMD ["poetry", "run", "gunicorn", "app.app:app", "-b", "0.0.0.0:5000", "--workers=4"]
 

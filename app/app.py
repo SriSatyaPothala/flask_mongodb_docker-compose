@@ -109,5 +109,5 @@ def list_all_strings():
 
 if __name__ == "__main__":
     app.run(
-        host="0.0.0.0", port=4100
+        host="0.0.0.0", port=5000
     )  # 0.0.0.0 will accept connections from any interface not only loopback
